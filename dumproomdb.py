@@ -4,7 +4,10 @@ import os
 import os.path
 
 def main(dbname):
-	
+	'''
+	Just a little sanity check to verify the database has 
+	Everything expected.
+	'''	
 	print 'start db dump'
 	con = sqlite3.connect(dbname)
 	

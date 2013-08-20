@@ -4,6 +4,11 @@ import os
 import os.path
 
 def main(dbname):
+	'''
+	This will read all the json.py files in the rooms directory
+	and save them to the rooms.sqlite database
+	'''
+
 	con = sqlite3.connect(dbname)
 	
 	con.execute("CREATE TABLE IF NOT EXISTS rooms(id INTEGER PRIMARY KEY, json TEXT NOT NULL)")

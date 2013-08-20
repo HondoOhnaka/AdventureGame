@@ -1,3 +1,5 @@
+# just some random utilities used during test & development
+
 import os
 
 #print os.listdir('.')
